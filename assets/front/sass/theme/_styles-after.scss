@@ -11589,7 +11589,7 @@ a.link-mega{
 .widget-categories ul>li::before, .widget-links ul>li::before{
     top: 4px !important;
 }
-.widget ul.list-unstyled li{
+.site-footer .widget-light-skin ul.list-unstyled li{
     font-size: 19px;
     color: #fff !important;
 }
@@ -11725,4 +11725,228 @@ h3.widget-title{
 }
 .site-header .toolbar .toolbar-item>.link-a-menu-login:hover .main-link>i{
     color: #000;
+}
+.shopping-cart-top .widget-title{
+    color: #000 !important;
+}
+.widget.widget-featured-posts .widget-title{
+    color: #000 !important;
+}
+.widget-featured-posts .list-unstyled li{
+    color: #000 !important;
+    font-size: 19px;
+}
+.details-page-top-right-content{
+    p{
+        font-size: 19px;
+    }
+    .p-title-main{
+        font-size: 27px;
+    }
+    .text-muted{
+        font-size: 20px;
+    }
+    .mb-3 span.text-success{
+        font-size: 18px;
+    }
+    .price-area{
+        & > small{
+            font-size: 22px;
+        }
+        #main_price{
+            font-size: 30px;
+        }
+        span:last-child{
+            font-size: 16px !important;
+        }
+    }
+}
+.cBodyMdBy__c__cList__m__i__cTop__cNameStr{
+    font-size: 20px;
+    font-weight: bold;
+}
+.cBodyMdBy__c__cList__m__i__cBott__m li span{
+    font-size: 20px;
+}
+.modal-dialog .modal-content .modal-header span{
+    font-size: 21px;
+}
+.product-gallery .product-badge{
+    font-size: 16px;
+}
+.cPrd__cGrpModls__m__i span{
+    font-size: 19px;
+}
+.cPrd__cGrpModls__m__i a{
+    font-size: 19px;
+}
+.cPrd__cGrpModls .t-c-b-area .pt-1.mb-1,
+.cPrd__cGrpModls .t-c-b-area .text-medium{
+    font-size: 19px;
+}
+.details-page-top-right-content .t-c-b-area a{
+    font-size: 19px;
+}
+#details .nav-tabs li a,
+#details *[role=tablist] li a{
+    font-size: 19px;
+}
+#details .tab-content #description{
+    p{
+        font-size: 20px;
+    }
+}
+.col-10.col-xs-11.col-sm-4.alert.animated.fadeInDown{
+    span[data-notify="title"]{
+        font-size: 19px;
+    }
+    span[data-notify="message"]{
+        font-size: 19px;
+    }
+}
+.widget-cart>.entry .entry-title, .widget-featured-posts>.entry .entry-title, .widget-featured-products>.entry .entry-title{
+    font-size: 16px;
+}
+.widget-cart>.entry .entry-meta, .widget-featured-products>.entry .entry-meta{
+    font-size: 15px;
+}
+.cart_view_header .text-right{
+    p{
+        font-size: 16px;
+    }
+    span{
+        font-size: 16px;
+    }
+}
+.cTitleSec__c__subtitle{
+    font-size: 19px;
+}
+.table-responsive.shopping-cart table thead tr th{
+    font-size: 1.15rem;
+}
+.table-responsive.shopping-cart table tbody tr td{
+    font-size: 18px;
+}
+.order-table .product-item .product-title>a, .shopping-cart .product-item .product-title>a, .wishlist-table .product-item .product-title>a{
+    font-size: 18px;
+}
+.card-body ol:last-child, .card-body p:last-child, .card-body ul:last-child{
+    font-size: 15px;
+}
+.infocarttotal tbody{
+    tr{
+        th{
+            font-size: 19px;   
+        }
+        &.cartsumm_grandtotal{
+            th{
+                font-size: 22px;
+            }
+        }
+    }
+}
+#cart_view_load .product-info .product-sku{
+    font-size: 19px !important;
+}
+#cart_view_load .product-info .product-withcoupon{
+    small{
+        font-size: 16px !important;
+    }
+}
+div:where(.swal2-container) .swal2-html-container{
+    font-size: 1.25rem !important;
+}
+div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm{
+    font-size: 1.1rem !important;
+    font-family: $total-font-family !important;
+    font-style: $font-style !important;
+}
+div:where(.swal2-container) button:where(.swal2-styled).swal2-deny{
+    font-size: 1.1rem !important;
+    font-family: $total-font-family !important;
+    font-style: $font-style !important;
+}
+.checkut-page .steps .step .step-title,
+.checkut-page .steps .step.active .step-title{
+    font-size: 18px !important;
+}
+.checkut-page .card-body h1, .checkut-page .card-body h2, .checkut-page .card-body h3, .checkut-page .card-body h4, .checkut-page .card-body h5, .checkut-page .card-body h6{
+    font-size: 21px !important;
+}
+.widget-order-summary .table tr:first-child>td{
+    font-size: 19px !important;
+}
+.widget-order-summary .table tr:nth-child(2){
+    td:first-child{
+        font-size: 19px !important;
+    }
+    .spnLstCart__fz1{
+        font-size: 1.2rem !important;
+    }
+}
+.widget-order-summary .table tr:last-child{
+    td:first-child{
+        font-size: 19px !important;
+    }
+    .spnLstCart__fz2{
+        font-size: 1.4rem !important;
+    }
+}
+.widget-cart>.entry .entry-title>a, .widget-featured-posts>.entry .entry-title>a, .widget-featured-products>.entry .entry-title>a{
+    font-size: 17px !important;
+}
+.widget-cart>.entry .entry-meta, .widget-featured-products>.entry .entry-meta{
+    font-size: 17px !important;
+}
+.widget-featured-products .entry .product-withcoupon small{
+    font-size: .75rem !important;
+}
+.checkut-page .card .card-body .list-unstyled{
+    font-size: 19px !important;
+}
+.widget-featured-posts .list-icon>li{
+    font-size: 18px;
+}
+.c-tabsSiteMapsIntoSite .tab .tablinks{
+    .sitemap__address{
+        font-size: 19px !important;
+    }
+}
+.cM-ContPageViewIn{
+    &__c{
+        // background-color: red;
+        &__cC{
+            &__cTitle{
+                font-size: 31px;
+            }
+            &__cPage{
+                font-size: 21px;
+                div{
+                    font-size: 21px;
+                }
+                p{
+                    font-size: 21px;
+                }
+            }
+        }
+    }
+}
+// ------------ MENU PEGAJOSO + NAVBAR
+.navbar-stuck .navbar{
+    position: fixed;
+    top: 76px;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: #fff;
+    box-shadow: 0 7px 30px -6px rgba(0, 0, 0, .15);
+}
+.navbar-stuck #c-mtoggSearchMob{
+    position: fixed;
+    top: 54px;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: #fff;
+    box-shadow: 0 7px 30px -6px rgba(0, 0, 0, .15);
 }

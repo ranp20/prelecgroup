@@ -196,8 +196,8 @@
             <?php
               //Combiar arrays de Foto principal y fotos de galería
               $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]";
-            //   $urlBaseDomain = $actual_link . "/grupocorein/"; // LOCAL
-               $urlBaseDomain = $actual_link . "/"; // SERVIDOR
+              $urlBaseDomain = $actual_link . "/prelecgroup/"; // LOCAL
+              //  $urlBaseDomain = $actual_link . "/"; // SERVIDOR
               // $imgPathFileFinal = $pathProductDetailsPhoto;
               // if(file_exists($pathProductDetailsPhoto)){
               //   $imgPathFileFinal = $pathProductDetailsPhoto;
@@ -267,8 +267,8 @@
             <?php
               //Combiar arrays de Foto principal y fotos de galería
               $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]";
-            //   $urlBaseDomain = $actual_link . "/grupocorein/"; // LOCAL
-               $urlBaseDomain = $actual_link . "/"; // SERVIDOR
+              $urlBaseDomain = $actual_link . "/prelecgroup/"; // LOCAL
+              //  $urlBaseDomain = $actual_link . "/"; // SERVIDOR
               $urlFirstPhoto = $urlBaseDomain.'assets/images/items/'.$item->photo;
               $urlFirstPhotoDefault = $urlBaseDomain.'assets/images/Utilities/default_product.png';
             ?>

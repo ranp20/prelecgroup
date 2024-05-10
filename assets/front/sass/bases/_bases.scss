@@ -954,7 +954,9 @@ img{
 			border-radius: 50%;
 			z-index: 9;
 			box-shadow: 0 2px 0 0px rgba(0,0,0,.2);
-			background-color: red;
+			// background-color: red;
+			background-color: $theme-color_primary;
+			// background-color: $theme-color_secondary;
 			button{
 				span{
 					color: #fff;
@@ -980,7 +982,9 @@ img{
 					padding: 10px 15px;
 					box-shadow: 0 2px 0 0px rgba(0,0,0,.2);
 					z-index: 9;
-					background-color: red;
+					// background-color: red;
+					background-color: $theme-color_primary;
+					// background-color: $theme-color_secondary;
 					margin: auto;
     			transform: translate(0px, 60px);
 					&__c{
@@ -989,6 +993,7 @@ img{
 							display: block;
 							font-weight: bold;
 							margin-bottom: 10px;
+							font-size: 22px;
 						}
 						&__cCountdown{
 							display: flex;
@@ -996,7 +1001,9 @@ img{
 							justify-content: space-between;
 							// background-color: blue;
 							&__c{
-								background-color: lighten(#ff0000, 20%);
+								// background-color: lighten(#ff0000, 20%);
+								background-color: lighten($theme-color_primary, 20%);
+								// background-color: lighten($theme-color_secondary, 20%);
 								border-radius: 50%;
 								width: 70px;
 								height: 70px;
@@ -1013,7 +1020,7 @@ img{
 									display: block;
 									position: relative;
 									top: -7px;
-									font-size: 13px;
+									font-size: 15px !important;
 								}
 							}
 						}
@@ -1046,7 +1053,8 @@ img{
 	}
 }
 .ipt_hidcouponvalid__cbtn{
-	background-color: red;
+	// background-color: red;
+	background-color: $theme-color_primary;
 	color: #fff;
 	position: absolute;
 	bottom: 10px;
@@ -1060,7 +1068,8 @@ img{
 	transition: all ease-in-out .15s;
 	&:hover{
 		// background-color: darken(#ff0000, 30%);
-		background-color: lighten(#ff0000, 15%);
+		// background-color: lighten(#ff0000, 15%);
+		background-color: lighten($theme-color_primary, 15%);
 	}
 	&__c{
 		span{
@@ -1079,7 +1088,7 @@ img{
 			tr{
 				border: none;
 				th{
-					font-size: 1rem !important;
+					// font-size: 1rem !important;
 					padding: 1rem;
 					text-transform: uppercase;
 				}

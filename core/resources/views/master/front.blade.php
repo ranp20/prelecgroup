@@ -84,6 +84,7 @@ function maxcharacters($string, $maxletters){
 <script type="text/javascript" src="{{asset('assets/front/js/plugins/jquery-3.4.1.min.js')}}" as="script"></script>
 @include('includes.apiwhatsappbutton')
 <header class="site-header navbar-sticky">
+    <div id="csl-fGv8n09c__sGaYs45">@csrf</div>
     <div class="topbar">
         <div class="container">
             <div class="row">
@@ -330,7 +331,6 @@ function maxcharacters($string, $maxletters){
             </div>
         </div>
     </div>
-    <div id="csl-fGv8n09c__sGaYs45">@csrf</div>
     <div class="navbar theme-total">
         <div class="container">
             <div class="row g-3 w-100" id="sdonv98349-mfdJasl98C3f">
@@ -704,9 +704,9 @@ function maxcharacters($string, $maxletters){
       if($wps_generalButton['number'] == "" || $wps_generalButton['number'] == NULL || $wps_generalButton['number'] == "NaN"){
         // echo "------------------------NO EXISTE NÚMERO";
         $wps_generalButton = [
-            'title' => 'WhatsApp GENERAL COREIN',
-            'text' => 'Me interesa saber más sobre los productos en GRUPOCOREIN',
-            'number' => '994264025',
+            'title' => 'WhatsApp GENERAL PRELECGROUP',
+            'text' => 'Me interesa saber más sobre los productos en PRELECGROUP',
+            'number' => '952265931',
         ];
       }
     }
@@ -724,9 +724,9 @@ function maxcharacters($string, $maxletters){
             $wps_generalButton = $ArrwpsNumbersButton['general'][0];
             if($wps_generalButton['number'] == "" || $wps_generalButton['number'] == NULL || $wps_generalButton['number'] == "NaN"){
                 $wps_generalButton = [
-                    'title' => 'WhatsApp GENERAL COREIN',
-                    'text' => 'Me interesa saber más sobre los productos en GRUPOCOREIN',
-                    'number' => '994264025',
+                    'title' => 'WhatsApp GENERAL PRELECGROUP',
+                    'text' => 'Me interesa saber más sobre los productos en PRELECGROUP',
+                    'number' => '952265931',
                 ];
             }
         @endphp
