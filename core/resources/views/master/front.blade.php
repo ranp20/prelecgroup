@@ -21,6 +21,11 @@
 @yield('styleplugins')
 <link href="{{ asset('assets/front/css/color.php?primary_color=').str_replace('#','',$setting->primary_color) }}" rel="stylesheet">
 <script type="text/javascript" src="{{asset('assets/front/js/modernizr.min.js')}}"></script>
+<!-- GOOGLE FONT -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
 @if (DB::table('languages')->where('is_default',1)->first()->rtl == 1)
     <!-- <link rel="stylesheet" href="{{asset('assets/front/css/rtl.css')}}"> -->
 @endif
@@ -79,22 +84,6 @@ function maxcharacters($string, $maxletters){
 <script type="text/javascript" src="{{asset('assets/front/js/plugins/jquery-3.4.1.min.js')}}" as="script"></script>
 @include('includes.apiwhatsappbutton')
 <header class="site-header navbar-sticky">
-    <div class="menu-top-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="t-m-s-a">
-                        <div>
-                            <a href="tel:016802680">
-                                <i class="icon-phone-call"></i>
-                                <span>(01) 493-6666 / (01) 382-7473</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>              
-            </div>
-        </div>
-    </div>
     <div class="topbar">
         <div class="container">
             <div class="row">
@@ -488,7 +477,8 @@ function maxcharacters($string, $maxletters){
                             </div>
                         </div>
                         <div class="col-lg-4 cGrpOptsNav__c__cSchdule">
-                            <div class="row g-3 w-100 cGrpOptsNav__c__cSchdule__c mt-0">
+                            {{--
+                            <!-- <div class="row g-3 w-100 cGrpOptsNav__c__cSchdule__c mt-0">
                                 <div class="col-lg-4 cGrpOptsNav__c__cSchdule__c__i">
                                     <span class=""><strong>Lunes - Viernes</strong></span>
                                     <span>{{$setting->friday_start}} - {{$setting->friday_end}}</span>
@@ -497,7 +487,16 @@ function maxcharacters($string, $maxletters){
                                     <span class=""><strong>Sábado</strong></span>
                                     <span>{{$setting->satureday_start}} - {{$setting->satureday_end}}</span>                                    
                                 </div>
-                            </div>
+                            </div> -->
+                            --}}
+                            <?php
+                            $numberEnterprise = "932121521";
+                            $numberPhoneEnterprise = preg_replace('/(\d{1,3})(?=(\d{3})+$)/', '$1 ', $numberEnterprise);
+                            ?>
+                            <a href="https://api.whatsapp.com/send?phone=51<?php echo $numberPhoneEnterprise;?>" class="c_headTop__btn_whatsapp">
+                                <img src="{{ asset('assets/images/Utilities') }}/wsp_icon.png" alt="Whatsapp" class="loading" data-was-processed="true">
+                                <span>+51 <?php echo $numberPhoneEnterprise;?></span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -538,14 +537,14 @@ function maxcharacters($string, $maxletters){
     </a>
     @endif
 </div>
-<section class="service-section" style="padding: 0px;">
-    <div class="container" style="border: 1px solid #003399;border-radius: 10px;margin-bottom: 25px;">
+<section class="service-section">
+    <div class="container">
         <div class="row">
             <div class="col-lg-3 col-sm-6 text-center">
                 <div class="single-service single-service2">
                     <img src="{{route('front.index')}}/assets/images/1669243396carro.png" alt="Shipping">
                     <div class="content" style="margin-left: 11px;">
-                        <h6 style="margin-bottom: 0px;color: #003399  !important;font-weight: bold;">Envío a domicilio</h6>
+                        <h6>Envío a domicilio</h6>
                         <p class="text-sm text-muted mb-0">Recíbelo donde tu quieras</p>
                     </div>
                 </div>
@@ -554,7 +553,7 @@ function maxcharacters($string, $maxletters){
                 <div class="single-service single-service2">
                     <img src="{{route('front.index')}}/assets/images/1669243349tienda.png" alt="Shipping">
                     <div class="content" style="margin-left: 11px;">
-                        <h6 style="margin-bottom: 0px;color: #003399  !important;font-weight: bold;">Retiro en tienda</h6>
+                        <h6>Retiro en tienda</h6>
                         <p class="text-sm text-muted mb-0">Compra online y ahorra en el envío</p>
                     </div>
                 </div>
@@ -563,7 +562,7 @@ function maxcharacters($string, $maxletters){
                 <div class="single-service single-service2">
                     <img src="{{route('front.index')}}/assets/images/1669244306mapa.png" alt="Shipping">
                     <div class="content" style="margin-left: 11px;">
-                        <h6 style="margin-bottom: 0px;color: #003399  !important;font-weight: bold;">Nuestras tiendas</h6>
+                        <h6>Nuestras tiendas</h6>
                         <p class="text-sm text-muted mb-0">Conoce todas nuestras tiendas</p>
                     </div>
                 </div>
@@ -572,7 +571,7 @@ function maxcharacters($string, $maxletters){
                 <div class="single-service single-service2">
                     <img src="{{route('front.index')}}/assets/images/1669243456telefono.png" alt="Shipping">
                     <div class="content" style="margin-left: 11px;">
-                        <h6 style="margin-bottom: 0px;color: #003399  !important;font-weight: bold;">Servicio al Cliente</h6>
+                        <h6>Servicio al Cliente</h6>
                         <p class="text-sm text-muted mb-0"><a href="{{route('front.index')}}/contact" style="color:#000;text-decoration: underline !important;">Estamos para atenderte</a></p>
                     </div>
                 </div>

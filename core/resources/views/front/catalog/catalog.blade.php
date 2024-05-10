@@ -440,7 +440,7 @@ if(Auth::check()){
     @endif
   @else
   <div class="col-lg-12">
-    <div class="card">
+    <div class="card c-anyitemsfilter__message">
       <div class="card-body text-center">
         <h4 class="h4 mb-0">{{ __('No Product Found') }}</h4>
       </div>

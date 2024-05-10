@@ -21,7 +21,7 @@
     @include('includes.user_sitebar')
     <div class="col-lg-8">
       <div class="padding-top-2x mt-2 hidden-lg-up"></div>
-      <div class="row u-d-d">
+      <div class="row u-d-d c-ListOptsDashboardClient">
         <div class="col-md-6 mb-4">
           <div class="card round">
             <div class="card-body text-center">

@@ -206,7 +206,7 @@ if(Auth::check()){
   </div>
 </div>
 @else
-<div class="card">
+<div class="card c-anyitemsfilter__message">
   <div class="card-body text-center ">{{__('No Product Found')}}</div>
 </div>
 @endif

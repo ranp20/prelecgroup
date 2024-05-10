@@ -1,6 +1,9 @@
 @import 'mixins';
 @import 'variables';
-$theme-color: #003399;
+// $theme-color: #003399;
+// $theme-color: #FF8000;
+$theme-color_primary: #FF8000;
+$theme-color_secondary: #1EA65E;
 
 :root,
 *,
@@ -19,8 +22,9 @@ body{
 	background-color: #f3f5f6 !important;
 	color: #505050;
 	font-weight: 400;
-  font-style: normal;
-  // font-size: 14px;
+  // font-style: normal;
+  font-style: italic;
+  font-size: 14px;
 	font-family: $total-font-family !important;
 	// font-family: 'Open Sans', sans-serif;
 	// font-size: 15px;
@@ -1464,8 +1468,9 @@ img{
 }
 .site-header .topbar{
 	// border-bottom: 1px solid #e5e5e5;
-	background-color: #fff !important;
+	// background-color: #fff !important;
 	// background-color: darken(#003399, 10%) !important;
+	background-color: #000 !important;
 	.toolbar-item > a{
 		// color: #fff !important;
 		position: relative;

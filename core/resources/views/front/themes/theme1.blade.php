@@ -62,7 +62,8 @@
       </div>
     </div>
   @endif
-  <div class="bannner-section mt-30">
+  {{--
+  <!-- <div class="bannner-section mt-30">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
@@ -164,7 +165,8 @@
         </div>
       </div>
     @endif
-  </div>
+  </div> -->
+  --}}
   @if ($setting->is_popular_category == 1)
     <section class="newproduct-section popular-category-sec mt-50">
       <div class="container">
@@ -384,7 +386,7 @@
             </div>
           </div>
           @else
-          <div class="card">
+          <div class="card c-anyitemsfilter__message">
             <div class="card-body text-center">{{__('No Product Found')}}</div>
           </div>
           @endif
@@ -623,7 +625,7 @@
             </div>
           </div>
           @else
-            <div class="card">
+            <div class="card c-anyitemsfilter__message">
               <div class="card-body text-center">{{__('No Product Found')}}</div>
             </div>
           @endif

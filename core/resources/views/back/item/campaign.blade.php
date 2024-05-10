@@ -161,9 +161,11 @@
                           </tr>
                       @endforeach
                     @else
-                    <p class="d-block text-center">
-                        {{ __('No Product Found') }}
-                    </p>
+                    <div class="c-anyitemsfilter__message">
+                        <p class="d-block text-center">
+                            {{ __('No Product Found') }}
+                        </p>
+                    </div>
                     @endif
                    
                     

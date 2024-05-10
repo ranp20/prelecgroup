@@ -116,29 +116,33 @@
         @foreach ($attrubutes as $attrubute)              
         <section class="widget widget-categories card rounded p-4">
           <h3 class="widget-title">{{ __('Filter by') }} {{$attrubute->name}}</h3>
-          @foreach ($options as $option)
-          @if ($attrubute->keyword == $option->attribute->keyword)
-          <div class="custom-control custom-checkbox">
-            <input class="custom-control-input option" {{isset($subcategory) && $subcategory->id == $option->id ? 'checked' : ''}}   type="checkbox" value="{{$option->name}}" id="{{$attrubute->id}}{{$option->name}}">
-            <label class="custom-control-label" for="{{$attrubute->id}}{{$option->name}}">{{$option->name}}<span class="text-muted"></span></label>
-          </div>  
-          @endif
-          @endforeach
+          <div class="c-contCategsFiltersByChcks">
+            @foreach ($options as $option)
+              @if ($attrubute->keyword == $option->attribute->keyword)
+              <div class="custom-control custom-checkbox">
+                <input class="custom-control-input option" {{isset($subcategory) && $subcategory->id == $option->id ? 'checked' : ''}}   type="checkbox" value="{{$option->name}}" id="{{$attrubute->id}}{{$option->name}}">
+                <label class="custom-control-label" for="{{$attrubute->id}}{{$option->name}}">{{$option->name}}<span class="text-muted"></span></label>
+              </div>  
+              @endif
+            @endforeach
+          </div>
         </section>
         @endforeach
         @endif
         <section class="widget widget-categories card rounded p-4">
           <h3 class="widget-title">{{__('Filter by Brand')}}</h3>
-          <div class="custom-control custom-checkbox">
-            <input class="custom-control-input brand-select" type="checkbox" value="" id="all-brand">
-            <label class="custom-control-label" for="all-brand">{{__('All Brands')}}</label>
+          <div class="c-contBrandsFiltersByChcks">
+            <div class="custom-control custom-checkbox">
+              <input class="custom-control-input brand-select" type="checkbox" value="" id="all-brand">
+              <label class="custom-control-label" for="all-brand">{{__('All Brands')}}</label>
+            </div>
+            @foreach ($brands as $getbrand)
+            <div class="custom-control custom-checkbox">
+              <input class="custom-control-input brand-select" {{isset($brand) && $brand->id == $getbrand->id ? 'checked' : ''}} type="checkbox" value="{{$getbrand->slug}}" id="{{$getbrand->slug}}">
+              <label class="custom-control-label" for="{{$getbrand->slug}}">{{$getbrand->name}}</label>
+            </div>
+            @endforeach
           </div>
-          @foreach ($brands as $getbrand)
-          <div class="custom-control custom-checkbox">
-            <input class="custom-control-input brand-select" {{isset($brand) && $brand->id == $getbrand->id ? 'checked' : ''}} type="checkbox" value="{{$getbrand->slug}}" id="{{$getbrand->slug}}">
-            <label class="custom-control-label" for="{{$getbrand->slug}}">{{$getbrand->name}}</label>
-          </div>
-          @endforeach
         </section>
       </aside>
     </div>

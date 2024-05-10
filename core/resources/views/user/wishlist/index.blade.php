@@ -63,7 +63,7 @@
               </tr>
               @endforeach
               @else
-              <tr class="text-center">
+              <tr class="text-center c-anyitemsfilter__message">
                 <td colspan="3">{{__('No Product Found')}}</td>
               </tr>
               @endif
